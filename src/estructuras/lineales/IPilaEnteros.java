@@ -10,26 +10,30 @@ public interface IPilaEnteros {
 	/**
 	 * Método que inserta un nuevo elemento en la pila
 	 * @param elemento es el nuevo elemento a insertar en la estructura
+	 * @throws Exception 
 	 */
-	public void push(int elemento);
+	public void push(int elemento) throws Exception;
 	
 	/**
 	 * Método que remueve el elemento cima de la Pila 
 	 * @return
+	 * @throws Exception 
 	 */
-	public int pop();
+	public int pop() throws Exception;
 	
 	/**
 	 * Método que obtiene (Sin removerlo) el elemento cima de la Pila 
 	 * @return elemento cima de la pila
+	 * @throws Exception 
 	 */
-	public int getTop();
+	public int getTop() throws Exception;
 	
 	/**
 	 * Método que indica el número de elementos de la Pila 
 	 * @return número de elementos
+	 * @throws Exception 
 	 */
-	public int getNumberOfElements();
+	public int getNumberOfElements() throws Exception;
 	
 	/**
 	 * Método que indica si la Pila se encuentra llena
