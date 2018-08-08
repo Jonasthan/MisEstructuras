@@ -26,7 +26,7 @@ public class PilaEnteros implements IPilaEnteros {
 	@Override
 	public int pop() throws Exception {
 		if(isEmpty()) {
-			throw new Exception("la lista esta vacia (desbordamiento Negativo)");
+			throw new Exception("La lista esta vacia (desbordamiento Negativo)");
 		}
 		int numero = listaEnteros[cima];
 		cima--;
@@ -36,7 +36,7 @@ public class PilaEnteros implements IPilaEnteros {
 	@Override
 	public int getTop() throws Exception {
 		if(isEmpty()) {
-			throw new Exception("la lista esta vacia (desbordamiento Negativo)");
+			throw new Exception("La lista esta vacia");
 		}
 		return listaEnteros[cima];
 	}
@@ -44,7 +44,7 @@ public class PilaEnteros implements IPilaEnteros {
 	@Override
 	public int getNumberOfElements() throws Exception {
 		if(isEmpty()) {
-			throw new Exception("la lista esta vacia (desbordamiento Negativo)");
+			throw new Exception("La lista esta vacia ");
 		}
 		return cima; // manito arriba
 	
